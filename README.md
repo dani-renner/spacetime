@@ -19,6 +19,7 @@
 * popper.js
 
 ## Description
+_This program takes in a user's age and returns their age on different planets_
 
 ## Setup/Installation Requirements
 

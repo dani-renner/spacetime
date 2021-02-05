@@ -10,6 +10,6 @@ export default class Age {
     return Math.round(this.age/.62);
   }
   marsAge(){
-
+    return Math.round(this.age/1.88);
   }
 };

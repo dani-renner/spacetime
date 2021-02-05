@@ -4,9 +4,9 @@ export default class Age {
   }
 
   mercuryAge(){
-    return parseInt(this.age/.24);
+    return Math.round(this.age/.24);
   }
   venusAge(){
-    
+    return Math.round(this.age/.62);
 }
 };

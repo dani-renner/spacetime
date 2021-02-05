@@ -22,6 +22,9 @@ export default class Age {
       left = Math.abs(left);
       return "You've outlived your life expectancy by " + left + " years!";
     }
+    if (left===0){
+      return "Time's up.";
+    }
     else{
       return left + " years until death";
     }

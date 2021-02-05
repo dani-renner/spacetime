@@ -22,5 +22,7 @@ describe('Age', () => {
   });
   test('should correctly calculate years left in users life', () => {
   expect(ageObject.lifeLeft()).toEqual(18);
+  ageObject.age = 78;
+  expect(ageObject.lifeLeft()).toEqual("You've outlived your life expectancy by 5 years!");
   });
 });

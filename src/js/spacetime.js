@@ -17,6 +17,13 @@ export default class Age {
     return Math.round(this.age/11.86);
   }
   lifeLeft(){
-    return this.lifeExpectancy - this.age;
+    let left = this.lifeExpectancy-this.age;
+    if (left < 0){
+      left = Math.abs(left);
+      return "You've outlived your life expectancy by " + left + " years!";
+    }
+    else{
+      return left + " years until death";
+    }
   }
 };

@@ -29,4 +29,4 @@ export default class Age {
       return left + " years until death";
     }
   }
-};
+}

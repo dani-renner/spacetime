@@ -1,7 +1,13 @@
-import { MercuryAge } from './../src/js/spacetime.js';
-describe('MercuryAge', () => {
-  let age =55;
-  test('should correctly calculate a users age in Mercury years', () => {
-    expect(MercuryAge(age)).toEqual(229);
+import Age from './../src/js/spacetime.js';
+describe('Age', () => {
+  let ageObject;
+  beforeEach(() => {
+    ageObject = new Age(55);
+  });
+    test('should correctly create an Age object', () => {
+    expect(ageObject.age).toEqual(55);
+    });
+    test('should correctly calculate a users age in Mercury years', () => {
+    expect(ageObject.mercuryAge()).toEqual(229);
   });
 });

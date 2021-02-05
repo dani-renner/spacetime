@@ -16,4 +16,7 @@ export default class Age {
   jupiterAge(){
     return Math.round(this.age/11.86);
   }
+  lifeLeft(){
+    
+  }
 };

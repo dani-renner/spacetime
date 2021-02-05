@@ -20,4 +20,7 @@ describe('Age', () => {
   test('should correctly calculate a users age in Jupiter years', () => {
   expect(ageObject.jupiterAge()).toEqual(5);
   });
+  test('should correctly calculate years left in users life', () => {
+  expect(ageObject.lifeLeft()).toEqual(18);
+  });
 });

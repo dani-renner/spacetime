@@ -12,4 +12,7 @@ export default class Age {
   marsAge(){
     return Math.round(this.age/1.88);
   }
+  jupiterAge(){
+    
+  }
 };

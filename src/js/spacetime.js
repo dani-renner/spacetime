@@ -8,5 +8,8 @@ export default class Age {
   }
   venusAge(){
     return Math.round(this.age/.62);
-}
+  }
+  marsAge(){
+
+  }
 };

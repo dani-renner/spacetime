@@ -1,6 +1,6 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### Find your age using other planets' calendars!
 
 #### By Dani Renner
 

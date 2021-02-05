@@ -17,6 +17,6 @@ export default class Age {
     return Math.round(this.age/11.86);
   }
   lifeLeft(){
-    
+    return this.lifeExpectancy - this.age;
   }
 };

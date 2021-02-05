@@ -13,6 +13,9 @@ describe('Age', () => {
   test('should correctly calculate a users age in Venus years', () => {
   expect(ageObject.venusAge()).toEqual(89);
   });
+  test('should correctly calculate a users age in Mars years', () => {
+  expect(ageObject.marsAge()).toEqual(29);
+  });
   test('should correctly calculate a users age in Jupiter years', () => {
   expect(ageObject.jupiterAge()).toEqual(5);
   });

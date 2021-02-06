@@ -12,10 +12,12 @@ $(document).ready(function() {
     const userData = new Age(userAge, userLifeExpectancy);
     $(".output").show();
     $("#userMercury").text(userData.mercuryAge());
-    $("#mercuryLeft").text()
+    $("#mercuryLeft").text(userData.lifeLeft((userData.mercuryAge()), (userData.mercuryLifeExpentancy())));
     $("#userVenus").text(userData.venusAge());
+    $("#venusLeft").text(userData.lifeLeft((userData.venusAge()), (userData.venusLifeExpentancy())));
     $("#userMars").text(userData.marsAge());
+    $("#marsLeft").text(userData.lifeLeft((userData.marsAge()), (userData.marsLifeExpentancy())));
     $("#userJupiter").text(userData.jupiterAge());
-    $("#jupiterLeft").text(userData.lifeLeft());
+    $("#jupiterLeft").text(userData.lifeLeft((userData.jupiterAge()), (userData.jupiterLifeExpentancy())));
   });
 });

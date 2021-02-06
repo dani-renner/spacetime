@@ -4,11 +4,13 @@ h3{
 }
 body{
   font-size: large;
+  background: black;
+  color: white;
 }
 #formOne{
   padding-top: 20px;
 }
-
 .output{
   display:none;
+  padding-top: 25px;
 }

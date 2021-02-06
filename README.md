@@ -31,8 +31,8 @@ _This program takes in a user's age and returns their age on different planets_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* Will not output ages and life expectancy on the page.
+* This project was focused on business logic and testing.
 
 ## License
 

@@ -28,8 +28,8 @@ export default class Age {
   jupiterLifeExpentancy(){
     return Math.round(this.lifeExpectancy/11.86);
   }
-  lifeLeft(){
-    let left = this.lifeExpectancy-this.age;
+  lifeLeft(age, lifeExpectancy){
+    let left = lifeExpectancy-age;
     if (left < 0){
       left = Math.abs(left);
       return "You've outlived your life expectancy by " + left + " years!";

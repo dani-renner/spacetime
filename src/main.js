@@ -12,6 +12,7 @@ $(document).ready(function() {
     const userData = new Age(userAge, userLifeExpectancy);
     $(".output").show();
     $("#userMercury").text(userData.mercuryAge());
+    $("#mercuryLeft").text()
     $("#userVenus").text(userData.venusAge());
     $("#userMars").text(userData.marsAge());
     $("#userJupiter").text(userData.jupiterAge());

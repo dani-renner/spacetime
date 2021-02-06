@@ -11,10 +11,10 @@ $(document).ready(function() {
     const userLifeExpectancy = parseInt($('#lifeExpectancyInput').val());
     const userData = new Age(userAge, userLifeExpectancy);
     $(".output").show();
-    $("#userMercury").text(userData.age);
-    $("#userVenus").text(userData.age);
+    $("#userMercury").text(userData.mercuryAge());
+    $("#userVenus").text(userData.venusAge());
     $("#userMars").text(userData.marsAge());
     $("#userJupiter").text(userData.jupiterAge());
-    $("#jupiterLeft").text(userData.mercuryAge().lifeLeft());
+    $("#jupiterLeft").text(userData.lifeLeft());
   });
 });

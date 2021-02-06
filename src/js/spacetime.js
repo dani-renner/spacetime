@@ -1,3 +1,4 @@
+
 export default class Age {
   constructor(age, lifeExpectancy) {
     this.age = age;
@@ -5,20 +6,16 @@ export default class Age {
   }
 
   mercuryAge(){
-    this.lifeExpectancy=Math.round(this.lifeExpectancy/.24);
-    this.age=Math.round(this.age/.24);
+    return Math.round(this.age/.24);
   }
   venusAge(){
-    this.lifeExpectancy=Math.round(this.lifeExpectancy/.62);
-    this.age=Math.round(this.age/.62);
+    return Math.round(this.age/.62);
   }
   marsAge(){
-    this.lifeExpectancy=Math.round(this.lifeExpectancy/1.88);
-    this.age=Math.round(this.age/1.88);
+    return Math.round(this.age/1.88);
   }
   jupiterAge(){
-    this.lifeExpectancy=Math.round(this.lifeExpectancy/11.86);
-    this.age=Math.round(this.age/11.86);
+    return Math.round(this.age/11.86);
   }
   lifeLeft(){
     let left = this.lifeExpectancy-this.age;
@@ -33,4 +30,4 @@ export default class Age {
       return left + " years until death";
     }
   }
-}
+};

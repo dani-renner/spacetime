@@ -11,7 +11,7 @@ $(document).ready(function() {
     const userLifeExpectancy = parseInt($('#lifeExpectancyInput').val());
     const userData = new Age(userAge, userLifeExpectancy);
     $(".output").show();
-    $("#userMercury").text(userData.mercuryAge());
+    $("#userMercury").text(userData.age);
     $("#userVenus").text(userData.age);
     $("#userMars").text(userData.marsAge());
     $("#userJupiter").text(userData.jupiterAge());

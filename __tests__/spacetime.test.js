@@ -8,25 +8,17 @@ describe('Age', () => {
   expect(ageObject.age).toEqual(55);
   expect(ageObject.lifeExpectancy).toEqual(73);
   });
-  test('should correctly calculate a users age & life expectancy in Mercury years', () => {
-  ageObject.mercuryAge();
-  expect(ageObject.age).toEqual(229);
-  expect(ageObject.lifeExpectancy).toEqual(304);
+  test('should correctly calculate a users age in Mercury years', () => {
+  expect(ageObject.mercuryAge()).toEqual(229);
   });
-  test('should correctly calculate a users age & life expectancy in Venus years', () => {
-  ageObject.venusAge();
-  expect(ageObject.age).toEqual(89);
-  expect(ageObject.lifeExpectancy).toEqual(118);
+  test('should correctly calculate a users age in Venus years', () => {
+  expect(ageObject.venusAge()).toEqual(89);
   });
-  test('should correctly calculate a users age & life expectancy in Mars years', () => {
-  ageObject.marsAge();
-  expect(ageObject.age).toEqual(29);
-  expect(ageObject.lifeExpectancy).toEqual(39);
+  test('should correctly calculate a users age in Mars years', () => {
+  expect(ageObject.marsAge()).toEqual(29);
   });
-  test('should correctly calculate a users age & life expectancy in Jupiter years', () => {
-  ageObject.jupiterAge();
-  expect(ageObject.age).toEqual(5);
-  expect(ageObject.lifeExpectancy).toEqual(6);
+  test('should correctly calculate a users age in Jupiter years', () => {
+  expect(ageObject.jupiterAge()).toEqual(5);
   });
   test('should correctly calculate years left in users life', () => {
   expect(ageObject.lifeLeft()).toEqual("18 years until death");

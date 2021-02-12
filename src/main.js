@@ -7,7 +7,6 @@ import Age from './js/spacetime.js';
 $(document).ready(function() {
   $('#formOne').submit(function(event) {
     event.preventDefault();
-    
     const userAge = parseInt($('#ageInput').val());
     const userLifeExpectancy = parseInt($('#lifeExpectancyInput').val());
     const userData = new Age(userAge, userLifeExpectancy);

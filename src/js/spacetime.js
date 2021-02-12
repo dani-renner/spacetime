@@ -5,31 +5,34 @@ export default class Age {
   }
 
   ageCalculator(planet){
-    if (planet===mercury){
+    if (planet==="mercury"){
       return Math.round(this.age/.24);
     }
-    else if (planet===venus){
+    else if (planet==="venus"){
       return Math.round(this.age/.62);
     }
-    else if (planet===mars){
+    else if (planet==="mars"){
       return Math.round(this.age/1.88);
     }
-    else if (planet===jupiter){
+    else if (planet==="jupiter"){
       return Math.round(this.age/11.86);
     }
   }
-  mercuryLifeExpentancy(){
-    return Math.round(this.lifeExpectancy/.24);
+  lifeExpectancyCalculator(planet){
+    if (planet==="mercury"){
+      return Math.round(this.lifeExpectancy/.24);
+    }
+    else if (planet==="venus"){
+      return Math.round(this.lifeExpectancy/.62);
+    }
+    else if (planet==="mars"){
+      return Math.round(this.lifeExpectancy/1.88);
+    }
+    else if (planet==="jupiter"){
+      return Math.round(this.lifeExpectancy/11.86);
+    }
   }
-  venusLifeExpentancy(){
-    return Math.round(this.lifeExpectancy/.62);
-  }
-  marsLifeExpentancy(){
-    return Math.round(this.lifeExpectancy/1.88);
-  }
-  jupiterLifeExpentancy(){
-    return Math.round(this.lifeExpectancy/11.86);
-  }
+
   lifeLeft(age, lifeExpectancy){
     let left = lifeExpectancy-age;
     if (left < 0){

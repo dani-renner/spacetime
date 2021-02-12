@@ -8,32 +8,21 @@ describe('Age', () => {
     expect(ageObject.age).toEqual(55);
     expect(ageObject.lifeExpectancy).toEqual(73);
   });
-  test('should correctly calculate a users age in Mercury years', () => {
-    expect(ageObject.mercuryAge()).toEqual(229);
+  test('should correctly calculate a users age on different planets', () => {
+    expect(ageObject.ageCalculator("mercury")).toEqual(229);
+    expect(ageObject.ageCalculator("venus")).toEqual(89);
+    expect(ageObject.ageCalculator("mars")).toEqual(29);
+    expect(ageObject.ageCalculator("jupiter")).toEqual(5);
   });
-  test('should correctly calculate a users age in Venus years', () => {
-    expect(ageObject.venusAge()).toEqual(89);
+  test('should correctly calculate a users life expectancy different planets', () => {
+    expect(ageObject.lifeExpectancyCalculator("mercury")).toEqual(304);
+    expect(ageObject.lifeExpectancyCalculator("venus")).toEqual(118);
+    expect(ageObject.lifeExpectancyCalculator("mars")).toEqual(39);
+    expect(ageObject.lifeExpectancyCalculator("jupiter")).toEqual(6);
   });
-  test('should correctly calculate a users age in Mars years', () => {
-    expect(ageObject.marsAge()).toEqual(29);
-  });
-  test('should correctly calculate a users age in Jupiter years', () => {
-    expect(ageObject.jupiterAge()).toEqual(5);
-  });
-  test('should correctly calculate a users age in Mercury years', () => {
-    expect(ageObject.mercuryLifeExpentancy()).toEqual(304);
-  });
-  test('should correctly calculate a users age in Venus years', () => {
-    expect(ageObject.venusLifeExpentancy()).toEqual(118);
-  });
-  test('should correctly calculate a users age in Mars years', () => {
-    expect(ageObject.marsLifeExpentancy()).toEqual(39);
-  });
-  test('should correctly calculate a users age in Jupiter years', () => {
-    expect(ageObject.jupiterLifeExpentancy()).toEqual(6);
-  });
+
   test('should correctly calculate years left in users life', () => {
-    expect(ageObject.lifeLeft(55,73)).toEqual("18 years until death");
+    expect(ageObject.lifeLeft(55,73)).toEqual("18 years until death.");
     expect(ageObject.lifeLeft(55,55)).toEqual("Time's up.")
     expect(ageObject.lifeLeft(78,73)).toEqual("You've outlived your life expectancy by 5 years!");
   });

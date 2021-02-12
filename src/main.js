@@ -13,12 +13,12 @@ $(document).ready(function() {
     const userData = new Age(userAge, userLifeExpectancy);
     $(".output").show();
     $("#userMercury").text(userData.ageCalculator("mercury"));
-    $("#mercuryLeft").text(userData.lifeLeft((userData.ageCalculator("mercury")), (userData.mercuryLifeExpentancy())));
+    $("#mercuryLeft").text(userData.lifeLeft(userData.ageCalculator("mercury"), userData.lifeExpectancyCalculator("mercury")));
     $("#userVenus").text(userData.ageCalculator("venus"));
-    $("#venusLeft").text(userData.lifeLeft((userData.ageCalculator("venus")), (userData.venusLifeExpentancy())));
+    $("#venusLeft").text(userData.lifeLeft(userData.ageCalculator("venus"), userData.lifeExpectancyCalculator("venus")));
     $("#userMars").text(userData.ageCalculator("mars"));
-    $("#marsLeft").text(userData.lifeLeft((userData.ageCalculator("mars")), (userData.marsLifeExpentancy())));
+    $("#marsLeft").text(userData.lifeLeft(userData.ageCalculator("mars"), userData.lifeExpectancyCalculator("mars")));
     $("#userJupiter").text(userData.ageCalculator("jupiter"));
-    $("#jupiterLeft").text(userData.lifeLeft((userData.ageCalculator("jupiter")), (userData.jupiterLifeExpentancy())));
+    $("#jupiterLeft").text(userData.lifeLeft(userData.ageCalculator("jupiter"), userData.lifeExpectancyCalculator("jupiter")));
   });
 });

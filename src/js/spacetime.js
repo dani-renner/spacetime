@@ -32,7 +32,7 @@ export default class Age {
       return Math.round(this.lifeExpectancy/11.86);
     }
   }
-
+  
   lifeLeft(age, lifeExpectancy){
     let left = lifeExpectancy-age;
     if (left < 0){

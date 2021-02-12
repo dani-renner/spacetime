@@ -4,17 +4,19 @@ export default class Age {
     this.lifeExpectancy = lifeExpectancy;
   }
 
-  mercuryAge(){
-    return Math.round(this.age/.24);
-  }
-  venusAge(){
-    return Math.round(this.age/.62);
-  }
-  marsAge(){
-    return Math.round(this.age/1.88);
-  }
-  jupiterAge(){
-    return Math.round(this.age/11.86);
+  ageCalculator(planet){
+    if (planet===mercury){
+      return Math.round(this.age/.24);
+    }
+    else if (planet===venus){
+      return Math.round(this.age/.62);
+    }
+    else if (planet===mars){
+      return Math.round(this.age/1.88);
+    }
+    else if (planet===jupiter){
+      return Math.round(this.age/11.86);
+    }
   }
   mercuryLifeExpentancy(){
     return Math.round(this.lifeExpectancy/.24);
